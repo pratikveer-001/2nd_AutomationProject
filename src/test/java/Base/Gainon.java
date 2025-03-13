@@ -4,7 +4,6 @@ import java.net.MalformedURLException;
 import java.net.URI;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -12,10 +11,10 @@ import io.appium.java_client.android.AndroidDriver;
 public class Gainon {
 
 	public static AndroidDriver driver;
-	
+
 	@BeforeTest
 	public void setup() throws MalformedURLException, InterruptedException
-	{  
+	{
 
 		DesiredCapabilities capabilities= new DesiredCapabilities();
 		capabilities.setCapability("platformName", "Android");
@@ -28,9 +27,9 @@ public class Gainon {
 		//WebDriverWait wait = new WebDriverWait(driver1,Duration.ofSeconds(5000));
 		System.out.println("started");
 		Thread.sleep(2000);
-		
+
    	}
-	
+
 //	@AfterTest
 //	public void teardown()
 //	{

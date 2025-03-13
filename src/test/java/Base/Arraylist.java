@@ -9,20 +9,20 @@ public class Arraylist {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<String> name = new ArrayList<String>();
+		ArrayList<String> name = new ArrayList<>();
 		name.add("raju");
 		name.add("pratik");
 		name.add("rahul");
 		name.add("raju");
 		name.add("pratik");
-		
-		Set<String> s= new HashSet<String>();
-		
+
+		Set<String> s= new HashSet<>();
+
 		for(String name1 : name)
 		{
-			if(s.add(name1)==true)
-				
-			System.out.println(name1);
+			if(s.add(name1)) {
+				System.out.println(name1);
+			}
 		}
 	}
 

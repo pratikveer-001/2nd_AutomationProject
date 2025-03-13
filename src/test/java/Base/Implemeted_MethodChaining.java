@@ -7,6 +7,6 @@ public class Implemeted_MethodChaining {
 		new Method_Chaining().isDisplayed()
 		                     .verify()
 		                     .validate();
-	
+
 	}
 }

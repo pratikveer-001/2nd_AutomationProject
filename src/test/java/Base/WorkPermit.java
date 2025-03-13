@@ -3,10 +3,12 @@ package Base;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.android.AndroidDriver;
 
 public class WorkPermit {
@@ -48,44 +50,44 @@ public class WorkPermit {
 		String Profile_Name=Profile.getText();
 		System.out.println(Profile_Name);
 		Thread.sleep(2000);
-		String Exp_Dash="Hello, Gaurav Narvekar";			
+		String Exp_Dash="Hello, Gaurav Narvekar";
 //		Assert.assertTrue(Profile_Name.equals(Exp_Dash), "Expected text to be '" + Exp_Dash + "' but found '" + Profile_Name + "'");
 		System.out.println("pass");
 		Thread.sleep(2000);
 //		driver1.quit();
-		
+
 		driver1.findElement(By.xpath("//android.widget.Button[@content-desc='Create Work Permit']")).click();
 		Thread.sleep(2000);
 
 		driver1.findElement(By.xpath("//android.widget.ScrollView/android.widget.ImageView[1]/android.view.View")).click();
-		
+
 		driver1.findElement(By.xpath("//android.view.View[@content-desc='Cold Work Permit']")).click();
-		
+
 		driver1.findElement(By.xpath("//android.widget.ScrollView/android.widget.ImageView[2]/android.view.View")).click();
-		
+
 		driver1.findElement(By.xpath("//android.view.View[@content-desc='Defence Colony Plant']")).click();
-		
+
 		driver1.findElement(By.xpath("//android.widget.ScrollView/android.widget.ImageView[3]/android.view.View")).click();
-		
+
 		driver1.findElement(By.xpath("//android.view.View[@content-desc='Manufacturing Unit A']")).click();
-		
+
 		driver1.findElement(By.xpath("//android.widget.ScrollView/android.widget.ImageView[4]/android.view.View")).click();
-		
+
 		driver1.findElement(By.xpath("//android.view.View[@content-desc='AMC contractors']")).click();
-		
+
 		WebElement work_Discription=driver1.findElement(By.xpath("//android.widget.ScrollView/android.widget.EditText[1]"));
-		
+
 		work_Discription.click();
 		Thread.sleep(2000);
-		
+
 		work_Discription.sendKeys("Todays permit", Keys.TAB);
-   
+
         driver1.findElement(By.xpath("//android.widget.Button[@content-desc='Add Labours']")).click();
-        
-        driver1.findElement(By.xpath("//android.view.View[@content-desc='Goldee - External']")).click();	
-        
+
+        driver1.findElement(By.xpath("//android.view.View[@content-desc='Goldee - External']")).click();
+
         driver1.findElement(By.xpath("//android.view.View[@content-desc='Jenny - External']")).click();
-        
+
         driver1.findElement(By.xpath("//android.widget.Button[@content-desc='Add']")).click();
 	}
 }

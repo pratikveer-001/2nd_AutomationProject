@@ -26,7 +26,7 @@ public class Pom {
 	@FindBy(xpath= "//android.widget.Button[@content-desc=\"Submit\"]")
 	WebElement submit;
 
-	
+
 	public void allow() throws InterruptedException
 	{
 		Allow.click();
@@ -37,12 +37,12 @@ public class Pom {
     {
     	Email.sendKeys(Enteremail);
     }
-    
+
     public void enterpass(String Enterpass)
     {
     	Paas.sendKeys(Enterpass);
     }
-    
+
     public void clicksubmit()
     {
     	submit.click();
